@@ -1102,10 +1102,13 @@ const Partner = () => {
         </svg>
       </div>
 
-      <div className="flex justify-center mt-32">
-        <div className="border-2 border-x-white text-white px-4 py-2 rounded-lg transition-colors hover:bg-white hover:text-[#131313]">
+      <div className="flex justify-center my-32">
+        <a
+          href=""
+          className="py-3 px-6 text-sm duration-500 text-white no-underline hover:text-[#131313] transition border-2 border-solid rounded-full hover:bg-white button"
+        >
           BECOME A PARTNER
-        </div>
+        </a>
       </div>
     </section>
   );

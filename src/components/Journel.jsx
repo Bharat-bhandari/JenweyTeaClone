@@ -1,17 +1,37 @@
-import React from "react";
+import React, { useRef } from "react";
 import j1 from "../assets/images/j1.webp";
 import j2 from "../assets/images/j2.webp";
 import j3 from "../assets/images/j3.webp";
 
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 const Journel = () => {
+  const container = useRef();
+
+  useGSAP(() => {
+    gsap.from(".content", {
+      opacity: 0,
+      duration: 0.5,
+      ease: "none",
+      scrollTrigger: ".content",
+    });
+  });
+
   return (
-    <section className="h-[100vh] bg-white text-[#181818]">
+    <section ref={container} className="h-[100vh] bg-white text-[#181818] ">
       <div className="px-[6.5%] pt-[3%]">
         <p className="mb-2 text-2xl">Lisa's Journal</p>
         <div className="grid grid-cols-3 gap-10">
           <div>
             <div className="mx-auto">
-              <img src={j1} className="object-cover w-full mb-16" alt="j1" />
+              <img
+                src={j1}
+                className="object-cover w-full mb-16 content"
+                alt="j1"
+              />
             </div>
             <div className="flex flex-col max-w-[85%] mx-auto">
               <div className="text-[28px] leading-9 text-center">
@@ -27,7 +47,11 @@ const Journel = () => {
           </div>
           <div>
             <div className="mx-auto">
-              <img src={j2} className="object-cover w-full mb-16" alt="j1" />
+              <img
+                src={j2}
+                className="object-cover w-full mb-16 content"
+                alt="j1"
+              />
             </div>
             <div className="flex flex-col max-w-[85%] mx-auto">
               <div className="text-[28px] leading-9 text-center">
@@ -43,7 +67,11 @@ const Journel = () => {
           </div>
           <div>
             <div className="mx-auto">
-              <img src={j3} className="object-cover w-full mb-16" alt="j1" />
+              <img
+                src={j3}
+                className="object-cover w-full mb-16 content"
+                alt="j1"
+              />
             </div>
             <div className="flex flex-col max-w-[85%] mx-auto">
               <div className="text-[28px] leading-9 text-center">

@@ -1,11 +1,34 @@
-import React from "react";
+import React, { useRef } from "react";
 import spoon from "../assets/images/spoon.webp";
 
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 const Collection = () => {
+  const container = useRef();
+
+  useGSAP(() => {
+    gsap.from(".text1", {
+      scale: 0,
+      duration: 0.2,
+      ease: "none",
+      scrollTrigger: ".text1",
+    });
+
+    gsap.from(".spoon1", {
+      y: 200,
+      duration: 0.4,
+      ease: "none",
+      scrollTrigger: ".spoon1",
+    });
+  });
+
   return (
     <section className="h-[165vh] flex flex-col items-center">
       <div>
-        <p className="mb-16 text-2xl mt-60 cursor-pointe">
+        <p className="mb-16 text-2xl cursor-pointer mt-60 text1">
           Boutique Blended Loose Tea
         </p>
       </div>
@@ -32,7 +55,7 @@ const Collection = () => {
       </div>
 
       <div className="flex justify-center overflow-hidden">
-        <img src={spoon} alt="spoon" className="object-cover w-[82%]" />
+        <img src={spoon} alt="spoon" className="object-cover w-[82%] spoon1" />
       </div>
     </section>
   );
