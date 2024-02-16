@@ -176,7 +176,7 @@ const Scroll = () => {
     <>
       {/* First Section */}
       <section ref={container}>
-        <div className="grid max-h-screen grid-cols-3 bg-white ">
+        <div className="grid max-h-screen grid-cols-3 bg-white">
           <div className="flex items-center p-10 balls">
             <img
               src={ball}
@@ -206,8 +206,8 @@ const Scroll = () => {
               </div>
             </div>
           </div>
-          <div className="max-h-screen overflow-hidden leaf">
-            <img src={leaf} className="object-cover " alt="leaf" />
+          <div className="max-h-screen overflow-hidden leaf ">
+            <img src={leaf} className="object-cover w-full h-full" alt="leaf" />
           </div>
         </div>
 
@@ -227,7 +227,11 @@ const Scroll = () => {
         {/* Third Section */}
         <div className="grid grid-cols-3 bg-white max-h-[100vh]">
           <div className="overflow-hidden potleaf">
-            <img src={potLeaf} className="object-cover " alt="balls" />
+            <img
+              src={potLeaf}
+              className="object-cover w-full h-full"
+              alt="potleaf"
+            />
           </div>
           <div className="max-h-screen"> </div>
           <div className="bg-[#181818] max-h-[100vh] box5 px-12">
@@ -298,7 +302,7 @@ const Scroll = () => {
           <div className="overflow-hidden leafMirror max-h-[100vh]">
             <img
               src={leafMirror}
-              className="object-cover max-h-[100vh]"
+              className="object-cover w-full h-full"
               alt="leaf"
             />
           </div>

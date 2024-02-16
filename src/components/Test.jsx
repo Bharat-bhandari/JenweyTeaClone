@@ -59,7 +59,7 @@ const Test = () => {
       <div
         ref={container}
         className="maindiv"
-        style={{ backgroundImage: `url(${image})` }}
+        // style={{ backgroundImage: `url(${image})` }}
       >
         <div>
           <div className="mb-0 text-4xl font-normal tracking-wide lg:text-9xl text1">

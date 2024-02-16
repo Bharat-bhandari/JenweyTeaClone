@@ -22,7 +22,7 @@ const Journel = () => {
 
   return (
     <section ref={container} className="h-[100vh] bg-white text-[#181818] ">
-      <div className="px-[6.5%] pt-[3%]">
+      <div className="px-[7%] pt-[3%]">
         <p className="mb-2 text-2xl">Lisa's Journal</p>
         <div className="grid grid-cols-3 gap-10">
           <div>
@@ -33,7 +33,7 @@ const Journel = () => {
                 alt="j1"
               />
             </div>
-            <div className="flex flex-col max-w-[85%] mx-auto">
+            <div className="flex flex-col max-w-[90%] mx-auto">
               <div className="text-[28px] leading-9 text-center">
                 Tea Adornments Are a Thing
               </div>
@@ -53,7 +53,7 @@ const Journel = () => {
                 alt="j1"
               />
             </div>
-            <div className="flex flex-col max-w-[85%] mx-auto">
+            <div className="flex flex-col max-w-[90%] mx-auto">
               <div className="text-[28px] leading-9 text-center">
                 NOW OFFERED AT
               </div>
@@ -73,7 +73,7 @@ const Journel = () => {
                 alt="j1"
               />
             </div>
-            <div className="flex flex-col max-w-[85%] mx-auto">
+            <div className="flex flex-col max-w-[90%] mx-auto">
               <div className="text-[28px] leading-9 text-center">
                 Blessed Pure & Direct
               </div>
