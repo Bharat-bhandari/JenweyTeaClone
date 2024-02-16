@@ -1,10 +1,40 @@
-import React from "react";
+import React, { useRef } from "react";
+
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Partner = () => {
+  const container = useRef();
+
+  useGSAP(
+    () => {
+      gsap.fromTo(
+        ".test",
+        {
+          opacity: 0,
+          clipPath: "polygon(0% 0%,0% 0%,0% 100%,0% 100%)",
+        },
+        {
+          duration: 1,
+          ease: "power1.in",
+          clipPath: "polygon(0% 0%,100% 0%,100% 100%,0% 100%)",
+          opacity: 1,
+          scrollTrigger: ".test",
+        }
+      );
+    },
+    { scope: container }
+  );
+
   return (
-    <section className="w-full  bg-[#131313] flex flex-col justify-center ">
-      <div className="flex flex-col mt-10">
-        <p className="mb-0 text-center text-7xl">IMMERSE YOURSELF IN</p>
+    <section
+      ref={container}
+      className="w-full  bg-[#131313] flex flex-col justify-center "
+    >
+      <div className="flex flex-col mt-10 test">
+        <p className="mb-0 text-center text-7xl ">IMMERSE YOURSELF IN</p>
         <p className="mt-0 text-center text-7xl">OUR OPULENT WORLD</p>
       </div>
       <div className="flex justify-center text-2xl text-center">

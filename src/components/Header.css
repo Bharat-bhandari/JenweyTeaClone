@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 2;
-  background-color: black;
+  background-color: #131313;
   color: white;
   /* height: 3.8rem; */
   margin: 0;
@@ -22,18 +22,19 @@
 }
 .menusvg {
   color: white;
-  width: 1.25rem;
+  width: 2rem;
   height: 1.25rem;
 }
 .navitems {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  font-size: 0.84rem;
 }
 .navitems > div {
   padding: 0 0.5rem;
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
 }
 .griditem2 {
   display: flex;
@@ -44,10 +45,10 @@
   justify-content: center;
   height: 3rem;
   width: 7rem;
-  background-color: black;
+  background-color: #131313;
   position: relative;
   bottom: -0.75rem;
-  border: 1px solid black;
+  border: 1px solid #131313;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
   margin-top: 0;
@@ -56,7 +57,7 @@
 .logosvg {
   position: absolute;
 
-  height: 3rem;
+  height: 3.2rem;
   top: -0.5rem;
 }
 
@@ -67,9 +68,13 @@
   gap: 3rem;
 }
 
-.subitemlogin,
-.subitemlock {
+.subitemlogin {
   padding: 0.125rem 0.5rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  font-size: 0.84rem;
+}
+
+.subitemlock {
+  padding-right: 1.5rem;
 }

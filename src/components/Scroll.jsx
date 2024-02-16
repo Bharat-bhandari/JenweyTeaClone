@@ -64,28 +64,28 @@ const Scroll = () => {
       gsap.from(".image1", {
         scale: 0,
         duration: 0.2,
-        ease: "none",
+        ease: "power4.out",
         scrollTrigger: ".image1",
       });
 
       gsap.from(".image2", {
         scale: 0,
         duration: 0.2,
-        ease: "none",
+        ease: "power4.out",
         scrollTrigger: ".image2",
       });
 
       gsap.from(".image3", {
         scale: 0,
         duration: 0.2,
-        ease: "none",
+        ease: "power4.out",
         scrollTrigger: ".image3",
       });
 
       gsap.from(".image4", {
         scale: 0,
         duration: 0.2,
-        ease: "none",
+        ease: "power4.out",
         scrollTrigger: ".image4",
       });
 

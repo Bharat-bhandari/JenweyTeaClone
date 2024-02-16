@@ -61,9 +61,14 @@ const Test = () => {
         className="maindiv"
         style={{ backgroundImage: `url(${image})` }}
       >
-        <div className="text1">YOUR SEVEN STAR</div>
-
-        <div className="text2">CONCIERGE TEA CO.</div>
+        <div>
+          <div className="mb-0 text-4xl font-normal tracking-wide lg:text-9xl text1">
+            YOUR SEVEN STAR
+          </div>
+          <div className="mt-0 text-4xl font-normal tracking-wide md:text-9xl text2">
+            CONCIERGE TEA CO.
+          </div>
+        </div>
         <div className="box"></div>
       </div>
     </div>

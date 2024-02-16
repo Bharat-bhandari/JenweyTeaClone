@@ -1,6 +1,6 @@
-import React from "react";
-import Header from "./components/Header";
-import Main from "./components/Main";
+import React, { useState, useEffect } from "react";
+import Loader from "./components/Loader"; // Import your Loader component
+
 import Partner from "./components/Partner";
 import Scroll from "./components/Scroll";
 import Collection from "./components/Collection";
@@ -10,17 +10,30 @@ import HeaderMain from "./components/HeaderMain";
 import Test from "./components/Test";
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate some asynchronous data loading process
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 600); // Adjust the time as per your requirement
+  }, []);
+
   return (
     <>
-      {/* <Header /> */}
-      {/* <Main /> */}
-      <HeaderMain />
-      <Test />
-      <Partner />
-      <Scroll />
-      <Collection />
-      <Journel />
-      <About />
+      {isLoading ? (
+        <Loader /> // Render the loader if isLoading is true
+      ) : (
+        <>
+          <HeaderMain />
+          <Test />
+          <Partner />
+          <Scroll />
+          <Collection />
+          <Journel />
+          <About />
+        </>
+      )}
     </>
   );
 };

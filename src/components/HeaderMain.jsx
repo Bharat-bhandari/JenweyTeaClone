@@ -60,9 +60,9 @@ const HeaderMain = () => {
   return (
     <Fragment>
       <div ref={container} className="headerblock">
-        <div className="tabs">
+        <div className="pt-2 tabs">
           <div className="griditem1">
-            <div className="burgermenu">
+            <div className="pl-6 cursor-pointer burgermenu">
               <svg
                 preserveAspectRatio="xMidYMid meet"
                 data-bbox="44 84 112 32"
@@ -83,7 +83,7 @@ const HeaderMain = () => {
                 </g>
               </svg>
             </div>
-            <div className="navitems">
+            <div className="navitems ">
               <div className="navitem1">SHOP</div>
               <div className="navitem2">WHOLESALE</div>
               <div className="navitem3">TEA OF MONTH</div>
