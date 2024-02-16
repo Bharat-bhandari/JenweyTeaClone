@@ -6,12 +6,16 @@ import Scroll from "./components/Scroll";
 import Collection from "./components/Collection";
 import Journel from "./components/Journel";
 import About from "./components/About";
+import HeaderMain from "./components/HeaderMain";
+import Test from "./components/Test";
 
 const App = () => {
   return (
     <>
-      <Header />
-      <Main />
+      {/* <Header /> */}
+      {/* <Main /> */}
+      <HeaderMain />
+      <Test />
       <Partner />
       <Scroll />
       <Collection />

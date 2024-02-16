@@ -1,0 +1,31 @@
+.maindiv {
+  width: 100%;
+  height: 94vh;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+
+  background-color: #131313;
+  clip-path: polygon(100% 0%, 200% 0%, 200% 100%, 100% 100%);
+}
+.text1 {
+  color: white;
+  z-index: 1;
+  font-size: 8rem;
+
+  /* opacity: 1; */
+}
+.text2 {
+  color: white;
+  z-index: 1;
+  font-size: 8rem;
+}
